@@ -1,5 +1,5 @@
-function godzilla(...arg) {
-    let [budget, statists, clothes] = [...arg] 
+function godzilla(arg) {
+    let [budget, statists, clothes] = [...arg].map(Number) 
     let decors = budget / 10
     let clothesSum = statists * clothes
   
@@ -10,4 +10,4 @@ function godzilla(...arg) {
     return `Not enough money!\nWingard needs ${Math.abs(budget).toFixed(2)} leva more.`
   }
 
-// console.log(godzilla('20000', '120', '55.5'))
+// console.log(godzilla(['20000', '120', '55.5']))
