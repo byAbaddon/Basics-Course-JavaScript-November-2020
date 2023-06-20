@@ -17,7 +17,7 @@ function vacation(arg) {
     }
   }
 
-  days = Math.abs(countSave + countSpend)
+  let days = countSave + countSpend
 
   return budget < holidayPrice ?
     `You can't save the money.\n${days}` :
